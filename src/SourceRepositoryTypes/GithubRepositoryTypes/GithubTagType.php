@@ -37,6 +37,8 @@ final class GithubTagType extends GithubRepositoryType implements SourceReposito
                       ->setAccessToken($config['private_access_token']);
 
         $this->client = $client;
+        
+        $this->setAccessToken($config['private_access_token']);
     }
 
     /**
